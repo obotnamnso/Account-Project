@@ -6,7 +6,7 @@ class Transaction:
         if amount <= from_account.get_balance():
             from_account.withdrawal(amount)
             to_account.deposite(amount)
-            print("Successful Transaction")
+            # print("Successful Transaction! :) ")
         else:
             print("Unsuccessful Transaction, Insufficient Funds")
-            
+        # print("Successful Transaction! :) ")

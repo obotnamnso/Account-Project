@@ -6,8 +6,8 @@ class Account:
 
     def __init__(self, account_number, balance):
         self.account_number = account_number
-        self.amount = balance
-        
+        self.balance = balance
+
     def get_balance(self):
         return self.balance
     
@@ -16,7 +16,7 @@ class Account:
 
     def withdrawal(self, amount):
         if amount <= self.balance:
-            self.balancce -= amount
+            self.balance -= amount
         else:
             print('Insufficient Balance')
 
